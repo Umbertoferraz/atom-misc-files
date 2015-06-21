@@ -1,0 +1,67 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ #171A1D
+ */
+
+.tree-view {
+  background: #24282b ;
+}
+
+// style the background and foreground colors on the atom-text-editor-element
+// itself
+atom-text-editor {
+  // background-color: #21252b;
+  background-color: #171A1D;
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow
+// expression
+atom-text-editor::shadow .cursor {
+  border-color: pink;
+}
+
+// span.name.icon.icon-file-directory::before {
+//   color: #b3b3b3;
+// }
+
+.theme-one-dark-ui {
+  .tab-bar { font-size: 12px; }
+  .tree-view { font-size: 12px; }
+  .status-bar { font-size: 12px; }
+}
+
+
+.tab-bar .tab .close-icon {
+  top: 0;
+  right: 0;
+  z-index: 1;
+  padding: 0 0.8em;
+  height: 5em;
+  line-height: 2em;
+  text-align: center;
+  transform: scale(0);
+  transition: transform .08s;
+  font-size: 16px;
+}
+
+.tab-bar .tab .close-icon:hover {
+  opacity: .7;
+  color: #FF0000;
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.minimap-visible-area {
+  border: 1px solid  #F2F200;
+  opacity: .4!important;
+
+}
