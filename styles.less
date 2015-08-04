@@ -13,15 +13,14 @@
 // style the background and foreground colors on the atom-text-editor-element
 // itself
 atom-text-editor {
-  // background-color: #21252b;
-  background-color: #171A1D;
+  background-color: #21252b;
+  // background-color: #171A1D;
 }
 // To style other content in the text editor's shadow DOM, use the ::shadow
 // expression
-atom-text-editor::shadow .cursor {
-  border-color: pink;
-}
-.tab-bar .tab .close-icon{top:-5px;font-size:16px}
+atom-text-editor::shadow .cursor{border-color:#fff}
+
+//close-icon from tabs
 .tab-bar .tab .close-icon:hover {
   opacity: .7;
   color: #FF0000;
@@ -31,8 +30,12 @@ atom-text-editor::shadow .cursor {
   -ms-transition: all ease .5s;
   transition: all ease .5s;
 }
+div.close-icon{margin-top: -8px; font-size:16px}
+
+//icons from tre-vieww
 span.name.icon.icon-file-directory::before{color:#b3b3b3}
 
+//setting fonts from theme
 .theme-one-dark-ui {
   .tab-bar { font-size: 12px; }
   .tree-view { font-size: 12px; }
