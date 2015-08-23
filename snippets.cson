@@ -63,8 +63,6 @@
     </html>
     """
 
-
-
 # ESTRUTURA HTML COMPLETA - BOOTSTRAP, FONT AWESOME, IECSS, JQUERY
   "Estrutura HTML Completa":
     "prefix":"htmlcompleto"
@@ -123,7 +121,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     """
 
-
 # MATERIALIZE
 '*':
   'materialize':
@@ -140,7 +137,6 @@
     'prefix': 'declaracss'
     'body': """
       <style type="text/css">
-
 
       </style>
     """
