@@ -113,8 +113,8 @@
 
 # MATERIAL DESIGN GOOGLE
 '*':
-  'mdl':
-    'prefix': 'mdl'
+  'mdlTag':
+    'prefix': 'mdlTag'
     'body': """
   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
