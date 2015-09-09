@@ -18,7 +18,7 @@ atom-text-editor {
   //background-color: #21252b;
   //background-color: #24282b ;
   background-color: #171A1D;
-
+  text-rendering: optimizeSpeed;
 }
 // To style other content in the text editor's shadow DOM, use the ::shadow
 // expression
@@ -45,11 +45,3 @@ span.name.icon.icon-file-directory::before{color:#b3b3b3}
   .status-bar { font-size: 12px; }
 }
 .tab-bar .title {text-indent: -20%;}
-/* this rule doesn´t work. I use only to copy and paste in minimap style.less on minimap package because there upgrade erase that css rule
-  .minimap-visible-area{
-    border:1px solid #F2F200;
-    border: 1px solid #52cbff;
-    border: 1px solid #528bff;
-    opacity:.3;
-  }
-*/
