@@ -182,60 +182,59 @@
         <link href="https://cdn.jsdelivr.net/octicons/2.1.2/octicons.css" rel="stylesheet">
     """
 
-#MODAL SIMPLES BOOTSTRAP
-  'Modal':
-    'prefix': 'modalsimples'
+# MODAL SIMPLES BOOTSTRAP
+  'Bootstrap Modal Simples':
+    'prefix': 'modalSimples'
     'body': """
-      <div class="modal fade" id="" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
-              </button>
-              <h4 class="modal-title" id=""></h4>
-            </div>
-            <div class="modal-body">
-              CORPO DO CONTEUDO DA MODAL
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary"></button>
+        <div class="modal fade" id="" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
+                </button>
+                <h4 class="modal-title" id=""></h4>
+              </div>
+              <div class="modal-body">
+                CORPO DO CONTEUDO DA MODAL
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary"></button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     """
 
-#MODAL PEQUENA E GRANDE BOOTSTRAP
-  'Modal':
-    'prefix': 'modaltamanhos'
+# MODAL TAMANHOS
+  'Modal Tamanhos Variados':
+    'prefix': 'modalTamanhos'
     'body': """
-      <!-- MODAL GRANDE -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+        <!-- MODAL GRANDE -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
 
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      CORPO DO CONTEUDO DA MODAL
+  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        CORPO DO CONTEUDO DA MODAL
+      </div>
     </div>
   </div>
-</div>
 
-<!-- MODAL PEQUENA -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+  <!-- MODAL PEQUENA -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
 
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      CORPO DO CONTEUDO DA MODAL
+  <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        CORPO DO CONTEUDO DA MODAL
+      </div>
     </div>
   </div>
-</div>
-    """
+"""
 
-
-#MODAL COM FORMULARIO BOOTSTRAP
-  'Modal':
+# MODAL COM FORMULARIO BOOTSTRAP
+  'Modal com Formulario':
     'prefix': 'modalform'
     'body': """
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
@@ -270,9 +269,9 @@
     </div>
   </div>
 </div>
-    """
+"""
 
-#ACORDION BOOSTRAP
+# ACORDION BOOSTRAP
   'Accordion':
     'prefix': 'accordion'
     'body': """
@@ -292,7 +291,7 @@
         </div>
       </div>
     </div>
-    """
+"""
 
 
 # CAROUSEL BOOSTRAP
@@ -367,7 +366,7 @@
     """
 
   'Navbar Dropdown':
-    'prefix': 'navbar-dropdown'
+    'prefix': 'navbarDropdown'
     'body': """
     <li class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown">${1:Menu Item} <b class="caret"></b></a>
