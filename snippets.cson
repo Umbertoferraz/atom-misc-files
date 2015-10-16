@@ -196,7 +196,118 @@
         <!-- Ionic frameworks -->
           <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
     """
+#TOOLTIP BOOSTRAP
+  'Tooltip Bootstrap':
+    'prefix': 'tooltip'
+    'body': """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>$1
+<style type="text/css">
+.tooltip{
+    position:absolute;
+    z-index:1020;
+    display:block;
+    visibility:visible;
+    padding:5px;
+    font-size:11px;
+    opacity:0;
+    filter:alpha(opacity=0)
+}
+.tooltip.in{
+    opacity:.8;
+    filter:alpha(opacity=80)
+}
+.tooltip.top{
+    margin-top:-2px
+}
+.tooltip.right{
+    margin-left:2px
+}
+.tooltip.bottom{
+    margin-top:2px
+}
+.tooltip.left{
+    margin-left:-2px
+}
+.tooltip.top .tooltip-arrow{
+    bottom:0;
+    left:50%;
+    margin-left:-5px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #000
+}
+.tooltip.left .tooltip-arrow{
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #000
+}
+.tooltip.bottom .tooltip-arrow{
+    top:0;
+    left:50%;
+    margin-left:-5px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-bottom:5px solid #000
+}
+.tooltip.right .tooltip-arrow{
+    top:50%;
+    left:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-right:5px solid #000
+}
+.tooltip-inner{
+    max-width:200px;
+    padding:3px 8px;
+    color:#fff;
+    text-align:center;
+    text-decoration:none;
+    background-color:#000;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px
+}
+.tooltip-arrow{
+    position:absolute;
+    width:0;
+    height:0
+}
+</style>
+<body>
 
+<div class="container">
+  <h3>Tooltip Example</h3>
+  <p>The data-placement attribute specifies the tooltip position.</p>
+  <ul class="list-inline">
+    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></li>
+  </ul>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+$3
+</body>
+</html>
+    """
 
 # MODAL SIMPLES BOOTSTRAP
   "Modal Simples Bootsrap":
@@ -285,85 +396,6 @@
     </div>
   </div>
 </div>
-    """
-
-# MODAL COM FORMULARIO BOOTSTRAP
-  'Modal':
-    'prefix': 'modalogin'
-    'body': """
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <style>
-      .modal-header, h4, .close {
-          background-color: #5cb85c;
-          color:white !important;
-          text-align: center;
-          font-size: 30px;
-      }
-      .modal-footer {
-          background-color: #f9f9f9;
-      }
-      </style>
-    </head>
-    <body>
-
-    <div class="container">
-      <h2>Modal Login Example</h2>
-      <!-- Trigger the modal with a button -->
-      <button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button>
-
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header" style="padding:35px 50px;">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
-            </div>
-            <div class="modal-body" style="padding:40px 50px;">
-              <form role="form">
-                <div class="form-group">
-                  <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-                  <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                  <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                  <input type="text" class="form-control" id="psw" placeholder="Enter password">
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" value="" checked>Remember me</label>
-                </div>
-                  <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-              <p>Not a member? <a href="#">Sign Up</a></p>
-              <p>Forgot <a href="#">Password?</a></p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <script>
-    $(document).ready(function(){
-        $("#myBtn").click(function(){
-            $("#myModal").modal();
-        });
-    });
-    </script>
-
-    </body>
-    </html>
     """
 
 #ACORDION BOOSTRAP
