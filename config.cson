@@ -4,21 +4,19 @@
   core:
     disabledPackages: [
       "autocomplete-phpunit"
+      "tool-bar-main"
+      "atom-minify"
       "php-cs-fixer"
       "script"
-      "tree-view-git-status"
-      "tree-view-git-branch"
-      "tool-bar-main"
-      "webbox-color"
-      "atom-minify"
+      "autocomplete-python"
     ]
     followSymlinks: false
   editor:
     invisibles: {}
     showIndentGuide: true
-    fontFamily: "Roboto Mono"
+    autoIndentOnPaste: true
     softWrap: true
-    lineHeight: 1.5
+    fontFamily: "Roboto Mono"
     tabLength: 4
   welcome:
     showOnStartup: false
@@ -36,6 +34,8 @@
     linter: {}
   pigments:
     extendAutocompleteToVariables: true
+    mergeColorDuplicates: true
+    markerType: "gutter"
   "autocomplete-plus": {}
   autoprefixer: {}
   linter:
@@ -47,12 +47,12 @@
   "git-history": {}
   "merge-conflicts":
     gitPath: "C:\\Program Files\\Git\\git-cmd.exe"
-  "bracket-matcher":
-    wrapSelectionsInBrackets: false
+  "bracket-matcher": {}
   "tree-view":
     hideVcsIgnoredFiles: true
   "atom-minify": {}
   "local-history": {}
+  "npm-install": {}
 ".source.ts":
   editor:
     softWrapAtPreferredLineLength: true
