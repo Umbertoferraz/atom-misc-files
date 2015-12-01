@@ -27,14 +27,12 @@ atom-text-editor {
 .tree-view .selected:before, li.file-entry.list-item.selected {
     padding-bottom: 4px;
     background: #090a0b;
-    border-left: 4px solid #4db6ac;
+    border-left: 4px solid lime;
 }
-
 // LINHA ATIVA DO EDITOR
 atom-text-editor::shadow .gutter .line-number {
     color: #FFF;
 }
-
 //personalizando o bracket da tag ativa selecionada
 atom-text-editor::shadow .bracket-matcher .region,
 .bracket-matcher .region {
@@ -51,9 +49,7 @@ atom-text-editor::shadow .bracket-matcher .region,
 li.file-entry.list-item::before {border-left: 4px solid lime;}
 
 //distancia entre as linhas da tree-view
-.list-tree li:not(.list-nested-item) {
-    line-height: 2.25em;
-}
+.list-tree li:not(.list-nested-item) { line-height: 2.25em;}
 
 
 // / {background-color: #FFF; }
