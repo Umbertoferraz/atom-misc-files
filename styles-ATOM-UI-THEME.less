@@ -1,6 +1,4 @@
-.tab-bar .tab .close-icon {
-
-}
+.tab-bar .tab .close-icon {color: #FFF;}
 .tab-bar .tab .close-icon:hover {
     opacity: 1.0;
     font-weight: bold;
@@ -33,11 +31,13 @@ atom-text-editor {
 li.file-entry.list-item.selected {
     padding-bottom: 4px;
     background: #090a0b;
+    border-left: 4px solid #4db6ac;
 }
 
 //cor da linha ativa do ATOM
 atom-text-editor::shadow .lines .line.cursor-line {
     background-color: rgba(255, 255, 255, 0.12);
+    border-left: 3px solid #4db6ac;
 
     // background-color: #2b4047;
 }
@@ -50,22 +50,16 @@ atom-text-editor::shadow .gutter .line-number {
 //personalizando o bracket da tag ativa selecionada
 atom-text-editor::shadow .bracket-matcher .region,
 .bracket-matcher .region {
-
     // border: 1px solid rgba(11, 11, 11, 0.6);
     // border: 5px inset rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 0;
-
     // border-bottom: 2px double #0088ff;
     // border-bottom: 2px double lime;
     border-bottom: 1px double #4db6ac;
     position: absolute;
     z-index: 100;
 }
-li.file.entry.list-item::before {
-    border-left: 4px solid #FFF;
-}
-
 //distancia entre as linhas da tree-view
 // .list-tree li:not(.list-nested-item) { line-height: 2.25em;}
 /* CONFIGURACAO minimap-controls
