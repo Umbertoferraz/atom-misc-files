@@ -11,14 +11,12 @@
 }
 atom-text-editor {
     background-color: #21252b;
-
     //background-color: #24282b ;
     // background-color: #171A1D;
     background-color: #090a0b;
     text-rendering: optimizeSpeed;
 }
 .tree-view {
-
     //background: #24282b ;
     // background: #21252b;
     // background-color: #282c34;
@@ -31,21 +29,26 @@ atom-text-editor {
 li.file-entry.list-item.selected {
     padding-bottom: 4px;
     background: #090a0b;
-    border-left: 4px solid #4db6ac;
+    // border-left: 704px solid #4db6ac;
 }
 
 //cor da linha ativa do ATOM
 atom-text-editor::shadow .lines .line.cursor-line {
     background-color: rgba(255, 255, 255, 0.12);
-    border-left: 3px solid #4db6ac;
-
+    // border-left: 1px solid #4db6ac;
     // background-color: #2b4047;
 }
+//cor da linha selecionada
+atom-text-editor::shadow .selection .region {
+    // background-color: DimGray;
+    // background-color: rgba(255, 255, 255, 0.22);
+    // background-color: hsl(329,45%,21%);
+    background-color: hsl(189,9%,30%);
+}
+
 
 // COR LINHA NUMERACAO
-atom-text-editor::shadow .gutter .line-number {
-    color: #FFF;
-}
+atom-text-editor::shadow .gutter .line-number {color: #FFF;}
 
 //personalizando o bracket da tag ativa selecionada
 atom-text-editor::shadow .bracket-matcher .region,
