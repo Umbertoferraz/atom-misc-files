@@ -46,9 +46,12 @@
     <!DOCTYPE html>
     <html lang="pt-br">
       <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Palavras chave separadas por virgulas" />
+        <meta name="description" content="Texto resumido aparecera nos resultados de busca atalhos" />
+        <meta name="author" content="Nome do autor">
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <title>Título Aba</title>
         <!-- Bootstrap CSS -->
@@ -84,9 +87,12 @@
     <!DOCTYPE html>
     <html lang="pt-br">
       <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Palavras chave separadas por virgulas" />
+        <meta name="description" content="Texto resumido aparecera nos resultados de busca atalhos" />
+        <meta name="author" content="Nome do autor">
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <title>Título Aba</title>
 
@@ -232,9 +238,9 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>$1
 <style type="text/css">
 .tooltip{
