@@ -15,14 +15,14 @@ atom-text-editor {
     // background-color: #000000;
     text-rendering: optimizeSpeed;
 }
-.tree-view {font-size: 14px;}
-
-//selecao ativa item tree-view
-/*.tree-view .selected:before,
+.name.icon.icon-file-directory {font-size: 13px!important;font-weight: 600;}
+.font-size-regular .tab-bar .tab {font-size: 13px;}
+/*selecao ativa item tree-view
+.tree-view .selected:before,
 li.file-entry.list-item.selected {
     padding-bottom: 4px;
     background-color: #090a0b;
-    // border-left: 100px solid #000;
+    border-left: 100px solid #000;
 } */
 
 //cor da linha ativa do ATOM
@@ -51,23 +51,41 @@ atom-text-editor::shadow .bracket-matcher .region,
     position: absolute;
     z-index: 100;
 }
-
 // cor da linha de numeração
 atom-text-editor::shadow .gutter .line-number {color: #FFF;}
 //largura coluna de numeracao de linhas
-atom-text-editor .gutter.git-diff-icon .line-number, atom-text-editor::shadow .gutter.git-diff-icon .line-number {
+atom-text-editor .gutter.git-diff-icon .line-number,
+atom-text-editor::shadow .gutter.git-diff-icon .line-number {
     max-width: 100%;
     border-left: none;
     padding-left: 0em;
     font-size: 12px;
 }
-
-//distancia entre as linhas da tree-view
-// .list-tree li:not(.list-nested-item) { line-height: 2.25em;}
-/* CONFIGURACAO minimap-controls
+/*cores mouse sobre item da toolbar*/
+.tool-bar .btn:hover,
+.tool-bar button:hover,
+.tool-bar button[class]:hover,
+.tool-bar .btn:focus,
+.tool-bar button:focus,
+.tool-bar button[class]:focus,
+.tool-bar .btn:active,
+.tool-bar button:active,
+.tool-bar button[class]:active,
+.tool-bar .btn:active:focus,
+.tool-bar .button:active:focus,
+.tool-bar .button[class]:active:focus  {
+    background: #0b5ca2!important;
+    color: #FFFFFF;
+}
+/*distancia entre as linhas da tree-view
+ .list-tree li:not(.list-nested-item) { line-height: 2.25em;}
+ CONFIGURACAO minimap-controls
 background-color: #FFF;
 opacity: .3;
 cursor: -webkit-grab;
-border-top: 2px solid #f44336;
-border-bottom: 2px solid #f44336;
+border-top: 2px double #f44336;
+border-bottom: 2px double #f44336;
+
+border-bottom: 2px double #0088ff;
 */
+
