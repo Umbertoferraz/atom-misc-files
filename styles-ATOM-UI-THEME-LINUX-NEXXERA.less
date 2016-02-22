@@ -11,9 +11,10 @@
 }
 atom-text-editor {
     // background-color: #040505;
-    background-color: #090a0b;
+    // background-color: #1f1e1e;
     // background-color: #000000;
     text-rendering: optimizeSpeed;
+    background-color: #090a0b;
 }
 .name.icon.icon-file-directory {font-size: 13px!important;font-weight: 600;}
 .font-size-regular .tab-bar .tab {font-size: 13px;}
@@ -21,7 +22,8 @@ atom-text-editor {
 .tree-view .selected:before,
 li.file-entry.list-item.selected {
     background-color: #090a0b;
-    border-left: 4px solid #0088ff;
+    // border-left: 4px solid #0088ff;
+    border-left: 4px solid #8bc34a;
 }
 
 //cor da linha ativa do ATOM
@@ -42,13 +44,13 @@ atom-text-editor::shadow .bracket-matcher .region,
 .bracket-matcher .region {
     // border: 1px solid rgba(11, 11, 11, 0.6);
     // border: 5px inset rgba(255, 255, 255, 0.3);
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 0;
     // border-bottom: 2px double #0088ff;
     // border-bottom: 2px double lime;
+    background-color: rgba(255, 255, 255, 0.3);
     border-bottom: 1px double #4db6ac;
     position: absolute;
     z-index: 100;
+    border-radius: 0;
 }
 // cor da linha de numeração
 atom-text-editor::shadow .gutter .line-number {color: #FFF;background: #111;}
@@ -73,7 +75,8 @@ atom-text-editor::shadow .gutter.git-diff-icon .line-number {
 .tool-bar .btn:active:focus,
 .tool-bar .button:active:focus,
 .tool-bar .button[class]:active:focus  {
-    background: #0b5ca2!important;
+    // background: #0b5ca2!important;
+    background: #40bd45!important;
     color: #FFFFFF;
 }
 /*distancia entre as linhas da tree-view
