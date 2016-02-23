@@ -5,18 +5,18 @@
     opacity: 1.0;
     font-weight: bold;
     color: red!important;
-    // -webkit-transition: all ease 0.5s;
-    // -o-transition: all ease 0.5s;
-    // -moz-transition: all ease 0.5s;
-    // -ms-transition: all ease 0.5s;
-    // transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
 }
 atom-text-editor {
     // background-color: #040505;
     // background-color: #1f1e1e;
     // background-color: #000000;
-    text-rendering: optimizeSpeed;
     background-color: #090a0b;
+
 }
 .name.icon.icon-file-directory {font-size: 13px!important;font-weight: 600;}
 .font-size-regular .tab-bar .tab {font-size: 13px;}
@@ -59,6 +59,7 @@ atom-text-editor::shadow .gutter .line-number {color: #FFF;background: #111;}
 atom-text-editor .gutter.git-diff-icon .line-number,
 atom-text-editor::shadow .gutter.git-diff-icon .line-number {
     max-width: 100%!important;
+    width: 80%;
     border-left: none;
     padding-left: 0em;
     font-size: 12px;
@@ -81,25 +82,7 @@ atom-text-editor::shadow .gutter.git-diff-icon .line-number {
     color: #FFFFFF;
 }
 /*Cor das barras de rolagem*/
-.scrollbars-visible-always /deep/ ::-webkit-scrollbar {
-    width: 0.4rem;
-    height: 0.5rem;
-    z-index: 99999;
-}
-.scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb {
-    // background: rgba(lime, lime, lime, 0.77);
-    background: rgba(58, 160, 226, 0.77);
-    border-radius: 0;
-    border: none;
-}
-/*distancia entre as linhas da tree-view
- .list-tree li:not(.list-nested-item) { line-height: 2.25em;}
- CONFIGURACAO minimap-controls
-background-color: #FFF;
-opacity: .3;
-cursor: -webkit-grab;
-border-top: 2px double #f44336;
-border-bottom: 2px double #f44336;
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-track {background: #252f33; border: none;}
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar {background-color: rgba(58, 160, 226, 0.77);}
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb { background: rgba(58, 160, 226, 0.77);}
 
-border-bottom: 2px double #0088ff;
-*/
