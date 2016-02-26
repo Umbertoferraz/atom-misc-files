@@ -19,6 +19,7 @@ atom-text-editor {background-color: #090a0b;}
 li.file-entry.list-item.selected {
     background-color: #090a0b;
     border-left: 4px solid #0088ff;
+    height: 28px;
 }
 //cor da linha ativa do ATOM
 atom-text-editor::shadow .lines .line.cursor-line {
@@ -34,7 +35,7 @@ atom-text-editor::shadow .bracket-matcher .region,
 .bracket-matcher .region {
     background-color: rgba(255, 255, 255, 0.3);
     //border-bottom: 1px double #4db6ac;
-    border-bottom: 1px double #0088ff;
+    border-bottom: 2px double #0088ff;
     position: absolute;
     z-index: 100;
     border-radius: 0;
@@ -62,12 +63,12 @@ atom-text-editor::shadow .gutter.git-diff-icon .line-number {
 .tool-bar button[class]:active,
 .tool-bar .btn:active:focus,
 .tool-bar .button:active:focus,
-.tool-bar .button[class]:active:focus  {    
+.tool-bar .button[class]:active:focus  {
     background: #0088ff!important;
     color: #FFFFFF;
 }
 /*Cor das barras de rolagem*/
 .scrollbars-visible-always /deep/ ::-webkit-scrollbar-track {background: #252f33; border: none;}
 .scrollbars-visible-always /deep/ ::-webkit-scrollbar {background-color: rgba(58, 160, 226, 0.77);}
-.scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb { background: rgba(58, 160, 226, 0.77);}
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb {border:2px solid #4b5457; background: rgba(58, 160, 226, 0.77);}
 
