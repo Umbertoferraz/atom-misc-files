@@ -1,6 +1,6 @@
 /*botao fechar das tabs*/
 .tab-bar .tab .close-icon {color: #FFF;}
-.tab-bar .tab .close-icon::before {font-size: 16px;}
+.tab-bar .tab .close-icon::before {font-size: 12px;}
 .tab-bar .tab .close-icon:hover {
     opacity: 1.0;
     font-weight: bold;
@@ -11,6 +11,7 @@
     -ms-transition: all ease 0.5s;
     transition: all ease 0.5s;
 }
+.tab-bar .tab::before, .tab-bar::before {border-left: 3px groove #52FF73;}
 atom-text-editor {
     // background-color: #040505;
     // background-color: #1f1e1e;
@@ -24,9 +25,12 @@ atom-text-editor {
 .tree-view .selected:before,
 li.file-entry.list-item.selected {
     background-color: #090a0b;
-    border-left: 4px solid rgba(96, 226, 58, 0.81);
+    border-left: 4px solid lime;
+	height: 26px;
 }
-
+.focused-panel:focus .selected:before {
+	background: rgba(96, 226, 58, 0.81);
+}
 //cor da linha ativa do ATOM
 atom-text-editor::shadow .lines .line.cursor-line {background-color: rgba(255, 255, 255, 0.12);}
 //cor da linha selecionada
@@ -40,15 +44,16 @@ atom-text-editor::shadow .bracket-matcher .region,
     z-index: 100;
     border-radius: 0;
 }
+
 // cor da linha de numeração
+.line-number {padding-left: 0em!important;color: #FFF;}
 atom-text-editor::shadow .gutter .line-number {color: #FFF!important;background: #111;}
 //largura coluna de numeracao de linhas
 atom-text-editor .gutter.git-diff-icon .line-number,
 atom-text-editor::shadow .gutter.git-diff-icon .line-number {
-    max-width: 100%!important;
     width: 80%;
     border-left: none;
-    padding-left: 0em;
+    padding-left: -0.5em!important;
     font-size: 12px;
 }
 /*cores mouse sobre item da toolbar*/
@@ -70,13 +75,12 @@ atom-text-editor::shadow .gutter.git-diff-icon .line-number {
 .btn:focus, .btn.btn-default:focus, .btn:hover, .btn.btn-default:hover {
     color: #d5dde2;
     background-image: none!important;
-    background-color: rgba(96, 226, 58, 0.71)!important;
+	background-color: rgba(96, 226, 58, 0.71)!important;
 }
 /*Cor das barras de rolagem*/
-.scrollbars-visible-always /deep/ ::-webkit-scrollbar-track {background-color: #2b4047!important; width: 2px!important;}
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-track {background-color: #2b4047!important;}
 .scrollbars-visible-always /deep/ ::-webkit-scrollbar {background-color: rgba(96, 226, 58, 0.81);}
-.scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb { background-color: rgba(96, 226, 58, 0.81);}
-.tab-bar .tab::before {background: #52FF73;}
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb {border:2px solid #4b5457; background-color: rgba(96, 226, 58, 0.81);}
 .btn.btn-info {
     color: #d5dde2;
     text-shadow: none;
@@ -86,3 +90,4 @@ atom-text-editor::shadow .gutter.git-diff-icon .line-number {
     color: #ffffff;
     text-shadow: 0 1px 0 rgba(96, 226, 58, 0.81);
 }
+
