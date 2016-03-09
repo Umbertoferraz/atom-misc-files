@@ -2,6 +2,7 @@
 .tab-bar .tab .close-icon {color: #FFF;}
 .tab-bar .tab .close-icon::before {font-size: 13px; font-weight: 400!important;}
 .tab-bar .tab .close-icon:hover {
+	font-weight: bold;
     opacity: 1.0;
     color: lime!important;
     -webkit-transition: all ease 0.5s;
@@ -14,9 +15,9 @@
 .tab-bar .tab {font-size: 12px; border: none;}
 .tab-bar.active, .tab.active {color: #FFF!important; font-size: 13px!important; text-shadow: 0.5px 0 0.5px  #FFF; }
 // Todos as tabs com borda esquerda azul -  .tab-bar .tab::before, .tab-bar::before {border-left: 4px groove #52FF73;}
-.tab-bar.active:before, .tab.active::before {border-left: 3px groove #52FF73;}
+.tab-bar.active:before, .tab.active::before {border-left: 4px groove #52FF73;}
 atom-text-editor {background-color: #090a0b;}
-.name.icon.icon-file-directory {font-size: 14px!important;font-weight: 400;}
+.name.icon.icon-file-directory {font-size: 14px!important;font-weight: 400;color: #52FF73!important;}
 .name.icon.icon-repo {font-weight: bold; font-size: 14px; color: #52FF73!important;}
 .font-size-regular .tab-bar .tab {font-size: 13px;}
 /*selecao ativa item tree-view */
@@ -76,8 +77,8 @@ atom-text-editor::shadow .gutter.git-diff-icon .line-number {
 }
 /*Cor das barras de rolagem*/
 .scrollbars-visible-always /deep/ ::-webkit-scrollbar-track {background-color: #2b4047!important;}
-.scrollbars-visible-always /deep/ ::-webkit-scrollbar {background-color: rgba(96, 226, 58, 0.81);}
-.scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb {border:2px solid #4b5457; background-color: rgba(96, 226, 58, 0.81);}
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar {width: 8px!important; background-color: rgba(96, 226, 58, 0.81);}
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb { border:2px solid #4b5457; background-color: rgba(96, 226, 58, 0.81);}
 .btn.btn-info {
     color: #d5dde2;
     text-shadow: none;
