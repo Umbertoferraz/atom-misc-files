@@ -23,6 +23,8 @@ atom-text-editor {background-color: #090a0b;}
 .name.icon.icon-file-directory:before {color: #52FF73;}
 .name.icon.icon-repo {font-weight: bold; font-size: 14px; color: #52FF73!important;}
 .font-size-regular .tab-bar .tab {font-size: 13px;}
+/*cor de fundo tree-view*/
+.tree-view {background-color: #2d2d2d;}
 /*selecao ativa item tree-view */
 .tree-view .selected:before,
 li.file-entry.list-item.selected {
@@ -45,7 +47,6 @@ atom-text-editor::shadow .bracket-matcher .region,
     z-index: 100;
     border-radius: 0;
 }
-
 // cor da linha de numeração
 .line-number {padding-left: -0.5em!important;}
 atom-text-editor::shadow .gutter .line-number {color: #FFF!important;background: #111;}
@@ -91,4 +92,10 @@ atom-text-editor::shadow .gutter.git-diff-icon .line-number {
     color: #ffffff;
     text-shadow: 0 1px 0 rgba(96, 226, 58, 0.81);
 }
-
+/** estilo minimap
+background-color: #888;
+opacity: .6;
+cursor: -webkit-grab;
+border-top: 2px double lime;
+border-bottom: 2px double lime;
+*/
