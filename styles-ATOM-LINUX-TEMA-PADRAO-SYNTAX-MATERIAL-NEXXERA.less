@@ -16,9 +16,12 @@
 // Todos as tabs com borda esquerda azul -  .tab-bar .tab::before, .tab-bar::before {border-left: 4px groove #0088ff;}
 .tab-bar.active, .tab.active {color: #FFF!important; font-size: 13px!important; text-shadow: 0.5px 0 0.5px  #FFF; }
 .tab.active::before, .tab-bar.active::before  {border-left: 4px groove #0088ff;}
-/*corpo do editor*/
-atom-text-editor {background-color: #090a0b;}
-.name.icon.icon-file-directory {font-size: 14px!important;font-weight: 400;}
+/*cor de fundo tree-view*/
+.tree-view {background-color: #252525;}
+/*corpo do editor boas cores - #0F0F0F */
+atom-text-editor {background-color: #1F1F1F;}
+/*Titulo da Raiz do projeto*/
+.name.icon.icon-file-directory, .name.icon.icon-file-directory::before {font-size: 14px!important;font-weight: 400; color: #569fdf!important;}
 .name.icon.icon-repo {font-weight: bold; font-size: 14px; color: #0088ff!important;}
 /*selecao ativa item tree-view */
 .tree-view {background-color: #222222;}
@@ -73,3 +76,13 @@ atom-text-editor::shadow .gutter .line-number {color: #FFF;background: #111;}
 .scrollbars-visible-always /deep/ ::-webkit-scrollbar-track {background: #252f33; border: none;}
 .scrollbars-visible-always /deep/ ::-webkit-scrollbar {background-color: rgba(58, 160, 226, 0.77);}
 .scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb {border:2px solid #4b5457; background: rgba(58, 160, 226, 0.77);}
+
+/*configuracao estilo minimap*/
+.minimap-visible-area {
+background-color: #888!important;
+opacity: .6!important;
+cursor: -webkit-grab!important;
+border-top: 2px double #009cff!important;
+border-bottom: 2px double #009cff!important;
+}
+
