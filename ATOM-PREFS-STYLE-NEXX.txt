@@ -78,7 +78,7 @@ atom-text-editor::shadow .selection .region {
 //personalizando o bracket da tag ativa selecionada
 .bracket-matcher .region,
 atom-text-editor::shadow .bracket-matcher .region {
-    background-color: rgba(255, 255, 255, 0.161);
+    background-color: rgba(255, 255, 255, 0.10);
     border-bottom: 2px double #1da3f0!important;
     position: absolute;
     z-index: 100;
