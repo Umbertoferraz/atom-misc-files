@@ -87,12 +87,13 @@ atom-text-editor::shadow .bracket-matcher .region {
 atom-text-editor .cursor {color: blue; background: blue; background-color: blue;}
 atom-text-editor::shadow .gutter .line-number {
     color: #FFF;
-    background: #111;
+    /*background: #111;*/
 }
+
 /*largura da linha numerica*/
 .gutter.git-diff-icon .line-number, atom-text-editor::shadow .gutter.git-diff-icon .line-number {
     margin-left: -28px;
-    margin-right: -12px;
+    margin-right: -20px;
     width: 80px;
 }
 /*cores mouse sobre item da toolbar*/
@@ -132,4 +133,3 @@ atom-text-editor::shadow .gutter .line-number {
     border-bottom: 2px double #009cff!important;
     border-left: rgba(58, 160, 226, 0.47);
 }
-
