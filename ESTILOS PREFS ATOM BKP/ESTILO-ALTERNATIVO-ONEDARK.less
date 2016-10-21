@@ -1,14 +1,9 @@
 //tag selecionada
+atom-text-editor { background: #090909;}
 
-atom-text-editor {
-    background: #090909;
-}
-
-.bracket-matcher .region,
-atom-text-editor::shadow .bracket-matcher .region {
+.bracket-matcher .region,atom-text-editor::shadow .bracket-matcher .region {
     /*background-color: rgba(0, 0, 0, 0.06);/*se tenma claro*/
-    background-color: rgba(255, 255, 255, 0.08);
-    /*se tenma escuro*/
+    background-color: rgba(255, 255, 255, 0.08);/*se tenma escuro*/
     border-bottom: 2px double #4785d7;
 }
 // efeito mouse sobre os botoes do atom
@@ -22,22 +17,18 @@ atom-text-editor::shadow .bracket-matcher .region {
     background: #475fd7!important;
 }
 //aba ativa borda azulada
+.tab-bar.active:before, .tab.active::before {border-left: 6px ridge #475fd7;}
 
-.tab-bar.active:before,
-.tab.active::before {
-    border: 2px double #475fd7;
-}
 /*icone da tab alterada*/
 .tab-bar .tab.modified:not(:hover) .close-icon {
     border: 2px double #ff0000!important;
     color: #ff0000!important;
 }
+.tree-view  {background-color: #000000;}
 /*selecao ativa item tree-view */
-.tree-view .selected:before,
-li.file-entry.list-item.selected {
-    background-color: #090a0b;
+.tree-view .selected:before, li.file-entry.list-item.selected {
+    background-color: rgba(255, 255, 255, 0.2);
     border-left: 2px solid #0088ff;
-    vertical-align: middle;
 }
 //cor da linha ativa do ATOM
 
@@ -72,3 +63,4 @@ atom-text-editor::shadow .gutter .line-number {
     background: #475fd7!important;
     color: #FFFFFF;
 }
+
