@@ -1,7 +1,10 @@
+/* tree-view para tema claro somente */
+/*.tree-view {background: #FFFFFF}*/
+
 /*selecao ativa item tree-view */
 .tree-view .selected:before, li.file-entry.list-item.selected {
     border-left: 4px solid #0088ff;
-    background-color: rgba(255, 255, 255, 0.13); /*se tema escuro, se claro comente*/
+    background-color: rgba(255, 255, 255, 0.13); /*se tema escuro*/
 }
 //tag selecionada
 .bracket-matcher .region, atom-text-editor.editor .bracket-matcher .region {
@@ -20,13 +23,17 @@
     background: #475fd7!important;
 }
 //aba ativa borda azulada
-.tab-bar.active:before, .tab.active::before {border-left: 6px ridge #475fd7;}
+.tab-bar.active:before, .tab.active::before, .tab-bar .tab.active {
+  border-left: 6px ridge #475fd7;
+  border-bottom: 1px dotted #475fd7;
+  font-weight: bold;
+}
 /*icone da tab alterada*/
 .tab-bar .tab.modified:not(:hover) .close-icon {
-    // border: 2px double #ff0000!important;
-    //border-radius: 50%;
     color: #ff0000!important;
-}
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: #ff0000;
+ }
 
 //cor da linha ativa do ATOM
 atom-text-editor.editor .lines .line.cursor-line {
