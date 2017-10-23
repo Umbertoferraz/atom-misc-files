@@ -1,49 +1,104 @@
-/* tree-view para tema claro somente */
-/*.tree-view {background: #FFFFFF}*/
+/*Estilizacao de fontes do Atom*/
+// atom-workspace,
+// atom-text-editor {
+//   font-family: "Fira Code";
+//   text-rendering: optimizeLegibility;
+// }
+//
+// atom-text-editor::shadow{
+//     .entity.other.attribute-name {
+//         font-family: "Operator Mono";
+//         font-style: italic;
+//     }
+// }
+atom-text-editor {
+  // font-family: 'Fira Code Retina';
+  font-family: 'Hasklig Medium';
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+atom-text-editor::shadow {
+  .string.quoted,
+  .string.regexp {
+    -webkit-font-feature-settings: "liga" off, "calt" off;
+  }
+  .source.js.jsx > .keyword.control.flow.js,
+  .storage, .type .function {
+    vertical-align: baseline;
+    font-family: 'flottflott';
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 1.2rem;
+  }
+  .source.js.jsx,
+  .storage.type.function.arrow.js,
+  .variable {
+    font-family: "Operator Mono Medium";
+    // font-family: 'flottflott';
+    text-rendering: optimizeLegibility;
+    font-style: italic;
+    font-weight: 400;
+    // font-size: 1.6em;
+    font-size: 1.1em;
+    line-height: 1.2rem;
+  }
+  .string.unquoted.js {
+    color: #CDD3DE;
+  }
+  .entity.name {
+    font-weight: 400;
+  }
+}
 
-/*selecao ativa item tree-view */
-.tree-view .selected:before, li.file-entry.list-item.selected {
-    border-left: 4px solid #0088ff;
-    background-color: rgba(255, 255, 255, 0.13); /*se tema escuro*/
-}
-//tag selecionada
-.bracket-matcher .region, atom-text-editor.editor .bracket-matcher .region {
-    background-color: rgba(150, 150, 150, 0.22); /*tema claro*/
-    border-bottom: 2px solid #0088ff; /*tema claro*/
-    border-radius: 0px;
-    z-index: 9;
-    // border-bottom-width: medium;
-    /* background-color: rgba(255, 255, 255, 0.09);tema escuro*/
-    /* border-bottom: 2px double #0bb6ff; tema escuro*/
-}
-//efeito mouse sobre botoes
-.btn.btn-default:focus, .btn.btn-default:hover, .btn:focus, .btn:hover {
-    color: #FFFFFF;
-    background-image: none!important;
-    background: #475fd7!important;
-}
-//aba ativa borda azulada
-.tab-bar.active:before, .tab.active::before, .tab-bar .tab.active {
-  border-left: 6px ridge #475fd7;
-  border-bottom: 1px dotted #475fd7;
-  font-weight: bold;
-}
-/*icone da tab alterada*/
-.tab-bar .tab.modified:not(:hover) .close-icon {
-    color: #ff0000!important;
-   -webkit-text-stroke-width: 3px;
-   -webkit-text-stroke-color: #ff0000;
+
+
+
+
+  /*selecao ativa item tree-view */
+ // atom-text-editor, atom-text-editor { background-color: #2e2e2f;}
+ .tree-view .selected:before, li.file-entry.list-item.selected {
+     border-left: 4px solid #0088ff;
+     background-color: rgba(255, 255, 255, 0.13); /*se tema escuro, se claro comente*/
+     transition: all 0.3s ease-in-out;
+ }
+ //tag selecionada
+ .bracket-matcher .region, atom-text-editor.editor .bracket-matcher .region {
+     background-color: rgba(150, 150, 150, 0.22); /*tema claro*/
+     border-bottom: 2px solid #0088ff; /*tema claro*/
+     border-radius: 0px;
+     z-index: 9;
+     // border-bottom-width: medium;
+     /* background-color: rgba(255, 255, 255, 0.09);tema escuro*/
+     /* border-bottom: 2px double #0bb6ff; tema escuro*/
+ }
+ //efeito mouse sobre botoes
+ .btn.btn-default:focus, .btn.btn-default:hover, .btn:focus, .btn:hover {
+     color: #FFFFFF;
+     background-image: none!important;
+     background: #475fd7!important;
+     border: 1px solid #000!important;
+     transition: all 0.3s ease-in-out;
+ }
+ //aba ativa borda azulada
+ .tab-bar.active:before, .tab.active::before {border-left: 6px ridge #475fd7;}
+ /*icone da tab alterada*/
+ .tab-bar .tab.modified:not(:hover) .close-icon {
+     // border: 2px double #ff0000!important;
+     //border-radius: 50%;
+     color: #ff0000!important;
  }
 
-//cor da linha ativa do ATOM
-atom-text-editor.editor .lines .line.cursor-line {
+ //cor da linha ativa do ATOM
+ atom-text-editor.editor .lines .line.cursor-line {
      background-color: rgba(255, 255, 255, 0.1); /*tema escuro */
-    /*background-color: #f6f5f5; /* tema branco */
-    z-index: 1;
-}
-// cor da linha de numeração
-/*atom-text-editor.editor .gutter .line-number { color: #cdcdcd!important;} /*tema escuro*/
+     /*background-color: #f6f5f5; /* tema branco */
+     /*background-color: #fbf6eb; /* tema sepia */
+ }
+ // cor da linha de numeração
+ /*atom-text-editor.editor .gutter .line-number { color: #333333!important;} /*tema claro*/
+ atom-text-editor.editor .gutter .line-number { color: #b1bec3!important;} /*tema escuro*/
 
-/* ADICIONAR AO MINIMAP
-border-top: 3px double #0088ff;
-border-bottom: 3px double #0088ff;*/
+ /* ADICIONAR AO MINIMAP
+ border-top: 3px double #0088ff;
+ border-bottom: 3px double #0088ff;*/
